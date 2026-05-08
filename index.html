@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jamie's Web Development</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Cabin+Sketch:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -709,13 +714,23 @@
 
 <nav>
   <a href="#" class="nav-logo">
-    <div class="nav-logo-icon">
-      <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 4h12M3 9h8M3 14h10" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
-        <circle cx="14" cy="14" r="2.5" fill="white" opacity="0.9"/>
-      </svg>
-    </div>
-    Jamie's Web Development
+    <svg viewBox="0 0 220 44" width="220" height="44" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="navgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#a78bfa"/>
+          <stop offset="100%" stop-color="#60a5fa"/>
+        </linearGradient>
+      </defs>
+      <!-- Left bracket -->
+      <path d="M10 8 L3 8 L3 36 L10 36" fill="none" stroke="url(#navgrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Right bracket -->
+      <path d="M30 8 L37 8 L37 36 L30 36" fill="none" stroke="url(#navgrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- J -->
+      <text x="20" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="url(#navgrad)">J</text>
+      <!-- Wordmark -->
+      <text x="50" y="21" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#eeeeff">Jamie's</text>
+      <text x="50" y="35" font-family="Georgia, serif" font-size="9" fill="#8888aa" letter-spacing="2">WEB DEVELOPMENT</text>
+    </svg>
   </a>
   <ul class="nav-links">
     <li><a href="#skills">Skills</a></li>
