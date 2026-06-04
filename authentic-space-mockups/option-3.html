@@ -16,7 +16,7 @@ nav{background:var(--cr);padding:12px 48px;display:flex;align-items:center;gap:1
 .nav-brand-block .sub{font-size:12px;color:var(--go);letter-spacing:2px;text-transform:uppercase;}
 .nav-links{margin-left:auto;display:flex;gap:28px;align-items:center;white-space:nowrap;}
 .nav-links a{color:var(--dt);font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;}
-.nav-book{background:var(--br);color:var(--lg);padding:10px 22px;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;border:1.5px solid var(--br);}
+.nav-book{background:var(--br);color:var(--lg);padding:10px 22px;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;border:1.5px solid var(--lg);cursor:pointer;transition:background 0.25s ease,color 0.25s ease;}
 .hero{background:var(--br);padding:72px 10%;text-align:center;}
 .hero-eyebrow{color:var(--lg);font-size:13px;letter-spacing:4px;text-transform:uppercase;margin-bottom:16px;}
 .hero h1{font-family:'Playfair Display',serif;font-size:56px;color:var(--wh);line-height:1.2;margin-bottom:10px;font-weight:600;}
@@ -87,6 +87,12 @@ h3{font-family:'Playfair Display',serif;font-size:19px;color:var(--br);margin-bo
     color: var(--br);
 }
 
+/* Book Now nav button */
+.nav-book:hover {
+    background: transparent;
+    color: var(--lg);
+}
+
 /* Book Now button - filled to outlined */
 .appt-btn {
     cursor: pointer;
@@ -139,11 +145,10 @@ h3{font-family:'Playfair Display',serif;font-size:19px;color:var(--br);margin-bo
 
 /* Sunset learn more link */
 .sq-text a {
-    transition: color 0.2s ease, letter-spacing 0.2s ease;
+    transition: color 0.2s ease;
 }
 .sq-text a:hover {
     color: #fff;
-    letter-spacing: 2px;
 }
 
 </style>
